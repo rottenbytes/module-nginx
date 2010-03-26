@@ -1,0 +1,11 @@
+# installed by puppet, will be overwritten if you modify it by hand
+
+server {
+	listen 8081;
+
+	location /nginx_status {
+		stub_status  on;
+		access_log   off;
+	}
+}
+
